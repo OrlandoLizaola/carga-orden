@@ -1,17 +1,8 @@
 package com.fragua.service;
 
-import java.io.IOException;
-
 import org.json.JSONObject;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fragua.dto.OrdenDto;
-
 public interface CargaOrdenInt {
-
-    public JsonNode mapearAtributos(JsonNode jsonNode, OrdenDto ordenDto);
-
-    public JsonNode convertToJson(String xmlData) throws IOException;
 
     public void procesarOrden(String peticionXml);
 
